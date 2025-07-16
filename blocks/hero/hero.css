@@ -20,7 +20,7 @@
   content: "";
   position: absolute;
   inset: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.4); /* Adjust opacity if needed */
   z-index: 1;
 }
 
@@ -36,13 +36,17 @@
   margin: 0 auto;
   font-size: 3rem;
   font-weight: 300;
-  color: #ffffff;
+  color: #ffffff !important;
+  position: relative;
+  z-index: 2;
 }
 
 .hero p {
   font-size: 1.25rem;
   margin-top: 1rem;
-  color: #ffffff;
+  color: #ffffff !important;
+  position: relative;
+  z-index: 2;
 }
 
 .hero picture {
