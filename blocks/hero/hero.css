@@ -5,20 +5,58 @@
 
 .hero {
   position: relative;
-  padding: 40px 24px;
-  min-height: 300px;
+  padding: 120px 24px;
+  min-height: 400px;
+  text-align: center;
+  color: #ffffff;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow: hidden;
+}
+
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  z-index: 1;
 }
 
 .hero h1 {
   max-width: 1200px;
-  margin-left: auto;
-  margin-right: auto;
-  color: var(--background-color);
+  margin: 0 auto;
+  font-size: 2.5rem;
+  font-weight: 300;
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.hero p {
+  font-size: 1.25rem;
+  margin-top: 1rem;
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+}
+
+.hero .cta-button {
+  display: inline-block;
+  margin-top: 2rem;
+  padding: 12px 24px;
+  background-color: #005eb8; /* Marriott blue */
+  color: #ffffff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
 }
 
 .hero picture {
   position: absolute;
-  z-index: -1;
+  z-index: 0;
   inset: 0;
   object-fit: cover;
   box-sizing: border-box;
@@ -30,8 +68,16 @@
   height: 100%;
 }
 
-@media (width >= 900px) {
+@media (min-width: 900px) {
   .hero {
-    padding: 40px 32px;
+    padding: 120px 32px;
+  }
+
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.5rem;
   }
 }
