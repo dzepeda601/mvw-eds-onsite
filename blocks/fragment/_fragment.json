@@ -11,6 +11,15 @@
               "name": "Fragment",
               "model": "fragment"
             }
+          },
+          "cf": {
+            "type": "reference",
+            "editable": true,
+            "path": {
+              "type": "string",
+              "default": "/content/dam/aem-demo-assets/en/adventures/san-francisco-food-tour"
+            },
+            "fragmentModel": "fragment"
           }
         }
       }
